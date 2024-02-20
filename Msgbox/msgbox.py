@@ -1,3 +1,19 @@
+"""
+This module implements the main functionality of vidstream.
+
+Author: Florian Dedov from NeuralNine
+YouTube: https://www.youtube.com/c/NeuralNine
+"""
+
+__author__ = "xMaxrayx"
+__email__ = "mail@neuralnine.com"
+__status__ = "planning"
+__doc__ = "This module inspired by AHKv2 sentyx."
+__version__ = "1.0.0"
+__website__ = "https://github.com/xMaxrayx"
+
+
+
 from tkinter import messagebox
 import platform
 import os
@@ -36,3 +52,6 @@ def Msgbox(text = "Press ok to continue" , title =  os.path.basename(__file__) ,
         return messagebox.askquestion(title ,text)
     elif search_L(option, "rc" ,"cr" , mode=1 ):
         return messagebox.askretrycancel(title ,text)
+
+
+print( __website__ )
